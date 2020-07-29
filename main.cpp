@@ -58,15 +58,8 @@ void bind_events()
                        {
                            _lock.lock();
 			  cout << name << endl;
-			 cout << data->get_string() << endl;
-#if 0
-			  for (auto i: data->get_map())
-			  {
-				cout << i.first << " " << i.second << endl;
-			  }
-	//		  cout << name << "  "  << data->get_map()[0]->get_string() << endl;
-#endif     
-                      _lock.unlock();
+			  cout << data->get_string() << endl;
+                          _lock.unlock();
                        }));
     
 }
